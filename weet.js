@@ -30,6 +30,7 @@ function processTweet(tweet) {
       api_url = 'http://api.openweathermap.org/data/2.5/forecast?q=' + tomQuery + '&mode=json&units=metric&cnt=8&appid=ab0f9735d1da46ee95ae7808cf197781';
       console.log(api_url);
       loadWeatherInfosFromJsonTom(api_url, tweet);
+      return;
     }else{
       loadWeatherInfosFromJson(api_url,tweet);
     }
@@ -105,11 +106,6 @@ function weatherinfosTom(apiJson, tweet) {
     post(tweet, replyText);
 	  }
   }
-  var city = apiJson['city']['name'];
-  var temp = apiJson['list'][0]['main']['temp'];
-  var weather = apiJson['list'][0]['weather'][0]['description'];
-  var replyText = "The temperature Tomorrow in " + city + " is: " + temp + "°C, and the weather is: " + weather;
-  console.log(replyText);
   // Update the replyText:
   post(tweet, replyText);
   
