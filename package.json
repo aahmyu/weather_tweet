@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Tweet weather infos on Twitter.",
   "main": "weet.js",
-  "repository": "",
+  "repository": "git@github.com:aahmyu/weather_tweet.git",
   "author": "aahmyu <aahmyu@gmail.com>",
   "dependencies": {
     "async": "~0.2.8",
