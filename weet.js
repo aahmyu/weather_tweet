@@ -100,7 +100,7 @@ function weatherinfosTom(apiJson, tweet) {
     var city = apiJson['city']['name'];
     var temp = apiJson['list'][i]['main']['temp'];
     var weather = apiJson['list'][i]['weather'][0]['description'];
-    var replyText = "The temperature now in " + city + " is: " + temp + "°C, and the weather is: " + weather;
+    var replyText = "The temperature Tomorrow in " + city + " is: " + temp + "°C, and the weather is: " + weather;
     console.log(replyText);
     // Update the replyText:
     post(tweet, replyText);
