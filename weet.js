@@ -107,7 +107,7 @@ function weatherinfosTom(apiJson, tweet) {
 	  }
   }
   // Update the replyText:
-  post(tweet, replyText);
+  //post(tweet, replyText);
   
  /* var replyText = "The temperature now in " + city + " is: " + temp_c + "°C, and the weather is: " + weather;
   console.log(replyText);
