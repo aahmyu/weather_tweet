@@ -82,8 +82,6 @@ function weatherinfosTomorrow(apiJson, tweet) {
   var temp = apiJson['list'][1].temp.day;
   var weather = apiJson['list'][1]['weather'][0]['description'];
   var replyText = "The temperature Tomorrow in " + city + " is: " + round(temp) + "°C, and the weather is: " + weather;
-  var dtxt = apiJson['list'][1].dt;
-  console.log(dtxt);
 
   // Update the replyText:
   post(tweet, replyText);
