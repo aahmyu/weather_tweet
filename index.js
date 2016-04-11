@@ -105,5 +105,5 @@ function loadWeatherInfosFromJsonTomorrow(api_url, tweet) {
 }
 
 function round(num) {
-  return Math.floor(num);
+  return Math.round(num);
 }
